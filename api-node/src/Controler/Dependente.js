@@ -9,7 +9,7 @@ export async function createTableDep(){
 export async function insertDep(req, res){
     let dependente = req.body;
     openDb().then(db=>{
-        db.run('INSERT INTO Dependente ( cod_funcionario, nome, data_nascimento, num_rg, num_cpf, nome_mae, cod_dependente) VALUES (?, ?, ?, ?, ?, ?, ?)', [dependente.cod_funcionario, dependente.nome, dependente.data_nascimento, dependente.num_rg, dependente.num_cpf, dependente.nome_mae]);
+        db.run('INSERT INTO Dependente ( cod_funcionario, nome, data_nascimento, num_rg, num_cpf, nome_mae, cod_dependente) VALUES (?, ?, ?, ?, ?, ?, ?)', [dependente.cod_funcionario, dependente.nome, dependente.data_nascimento, dependente.num_rg, dependente.num_cpf, dependente.nome_mae, dependente.cod_dependente]);
     })
     res.json({
         "statusCode": 200

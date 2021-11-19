@@ -1,0 +1,35 @@
+.Nav{
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.btns-nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 60px; 
+}
+
+.btn-cad {
+    width: 160px;
+    height: 50px;
+    background-color: #648D56;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px;
+    border-color: rgb(194, 194, 194);
+    cursor: pointer;
+}
+
+.btn-bus {
+    width: 160px;
+    height: 50px;
+    background-color: #0179C7;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px;
+    border-color: rgb(194, 194, 194);
+    cursor: pointer;
+}

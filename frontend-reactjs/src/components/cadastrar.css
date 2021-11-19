@@ -1,0 +1,38 @@
+.fields {
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    color: #242732;
+}
+
+input {
+    width: 100%;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    font-size: 1.2rem;
+    padding-left: 15px;
+    height: 35px;
+    background-color: rgb(235, 231, 231);
+}
+
+.btn-cad-fun button{
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 5px 50px;
+    color: #fff;
+    background-color: #648d56;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-cad-fun {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}

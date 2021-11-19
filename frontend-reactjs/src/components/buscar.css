@@ -1,0 +1,37 @@
+.Nav {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cardFun {
+    background-color: rgb(235, 231, 231);
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    height: 150px;
+    width: 500px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 7px;
+    font-size: 0.5rem;
+    display: inline-block;
+    
+}
+
+.gpField {
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+}
+
+
+
+.fieldCardFun {
+    color: black;
+    padding: 2px;
+}
+
+
+

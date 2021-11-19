@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #242732;
+}
+
+.btn-voltar {
+    border-radius: 7px;
+    background-color: crimson;
+    color: white;
+    width: 90px;
+    height: 25px;
+    cursor: pointer;
+}
