@@ -7,6 +7,8 @@ import '../components/buscar.css'
 function Buscar() {
 
     const [posts, setPosts] = useState([])
+
+    //Função GET para buscar cadastros
     
     useEffect (() => {
         axios.get('http://localhost:3000/funcionarios')
@@ -19,6 +21,7 @@ function Buscar() {
         })
     }, [])
 
+    //Função deletar funcionário
 
     function deleteFun (id) {
         axios.delete(`http://localhost:3000/funcionario/${id}`)
@@ -40,6 +43,8 @@ function Buscar() {
 
                 {posts.map((post, key) => {
                     return(
+
+                        //Card listar funcionários cadastrados
                         
                         <div className="cardFun" >
 
@@ -77,7 +82,6 @@ function Buscar() {
                                 <button className="btn-edi-bus" >Editar</button>
                             </Link>
 
-                            
                             <button onClick={() => deleteFun(post.cod_funcionario)} className="btn-exc-bus" >Excluir</button>
                             
 

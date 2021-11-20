@@ -45,7 +45,7 @@ function Editar() {
 
             <div className="Nav">
 
-                <h1>Cadastrar Funcionário</h1>
+                <h1>Editar Funcionário</h1>
                 
                 <main>
                     <div className="cad-fun">
@@ -84,7 +84,8 @@ function Editar() {
                              
 
                             <div className="btn-cad-fun">
-                                <button className="btn-cad-fun-cad" type="submit">Cadastrar</button>
+
+                                <button className="btn-cad-fun-cad" type="submit">Atualizar</button>
                                 <button className="btn-cad-fun-lim" type="reset">Limpar</button>
                             </div>
 

@@ -7,10 +7,14 @@ import axios from 'axios'
 import '../components/cadastrar.css'
 
 function Cadastrar() {
+    
+    //Função para retornar a página inical após cadatro ser concluido
 
     let history = useHistory()
 
     const {register, handleSubmit} = useForm({})
+
+
 
     const cad = dados => axios.post('http://localhost:3000/funcionario', dados)
     .then(()=> {
@@ -22,17 +26,21 @@ function Cadastrar() {
         console.log("algo de errado!")
     })
     
+    //Formulário de cadastro
+
     return(
         <div>
             <Header/>
             <Link to="/">
                 <button className="btn-voltar">Voltar</button>
             </Link>
+
             <div className="Nav">
 
                 <h1>Cadastrar Funcionário</h1>
                 
                 <main>
+
                     <div className="cad-fun">
 
                         <form onSubmit={handleSubmit(cad)}>

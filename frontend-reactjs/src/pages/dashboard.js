@@ -4,12 +4,13 @@ import {Link} from 'react-router-dom'
 import '../components/dashboard.css'
 
 function Dashboard() {
+
     return(
+
         <div>
 
             <Header/>
 
-                
                 <div className="Nav">
                 
                     <h1>Dashboard</h1>
@@ -26,10 +27,6 @@ function Dashboard() {
                             <button className="btn-bus" >Listar Dependentes</button>
                         </Link>  
 
-                    </div>
-                    
-                    <div className="div-body">
-                        
                     </div>
 
                 </div>

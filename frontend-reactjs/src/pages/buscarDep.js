@@ -7,6 +7,8 @@ import '../components/buscar.css'
 function BuscarDep() {
 
     const [posts, setPosts] = useState([])
+
+    //Função GET para buscar cadastros
     
     useEffect (() => {
         axios.get('http://localhost:3000/dependentes')
@@ -19,6 +21,7 @@ function BuscarDep() {
         })
     }, [])
 
+    //Função deletar dependente
 
     function deleteFun (cod_funcionario) {
         const id = parseInt(cod_funcionario)
@@ -38,9 +41,13 @@ function BuscarDep() {
                 </Link>
 
                 <h1>Lista de Dependentes</h1>
+                
 
                 {posts.map((post, key) => {
+
                     return(
+                        
+                        //Card listar funcionários cadastrados
                         
                         <div className="cardFun" >
 

@@ -8,6 +8,8 @@ import '../components/cadastrar.css'
 
 function CadastrarDep() {
 
+    //Função para retornar a página inical após cadatro ser concluido
+
     let history = useHistory()
 
     const {register, handleSubmit} = useForm({})
@@ -21,6 +23,8 @@ function CadastrarDep() {
     .catch(()=>{
         console.log("algo de errado!")
     })
+
+    //Formulário de cadastro
     
     return(
         <div>

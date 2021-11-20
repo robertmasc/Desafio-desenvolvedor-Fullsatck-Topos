@@ -11,16 +11,24 @@ import Editar from './pages/editar'
 
 
 function App() {
+
   return(
+
+    //Rotas das páginas
+
     <Router>
+
       <Switch>
+
         <Route exact path="/" component={Dashboard} />
         <Route path="/cadastrar" component={Cadastrar} />
         <Route path="/cadastrarDep" component={CadastrarDep} />
         <Route path="/buscar/" component={Buscar} />
         <Route path="/buscarDep/" component={BuscarDep} />
-        <Route path="/editar/:cod_funcionario" component={Editar} />
+        <Route path="/editar" component={Editar} />
+
       </Switch>
+      
     </Router>
   )
 }   
